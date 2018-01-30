@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "901515869586",
+    "firebase_url": "https://androidfood-4a612.firebaseio.com",
+    "project_id": "androidfood-4a612",
+    "storage_bucket": "androidfood-4a612.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901515869586:android:8058dff85778bc64",
+        "android_client_info": {
+          "package_name": "com.mamithi.delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901515869586-tfqnhilrncevklmjihtb9de0f5vmg3sv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mamithi.delivery",
+            "certificate_hash": "fefc9fc672628bc46ef0469b538e8453e9e39c6e"
+          }
+        },
+        {
+          "client_id": "901515869586-fu2bsu66b4s4r40a6g855o2b0vvt33e0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkyAIcTHpiiPuE5dYsJH2NVa0hwfABjkk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901515869586-fu2bsu66b4s4r40a6g855o2b0vvt33e0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
