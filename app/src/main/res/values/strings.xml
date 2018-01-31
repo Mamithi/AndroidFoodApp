@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Delivery</string>
     <string name="slogan">We will deliver food right to your door step. Just Order it. We are fast and Reliable.</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
