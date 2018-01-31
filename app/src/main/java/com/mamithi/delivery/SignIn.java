@@ -1,6 +1,7 @@
 package com.mamithi.delivery;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.mamithi.delivery.Common.Common;
 import com.mamithi.delivery.Model.User;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
@@ -56,6 +58,10 @@ public class SignIn extends AppCompatActivity {
                             User user = dataSnapshot.child(editPhone.getText().toString()).getValue(User.class);
                             if (user.getPassword().equals(editPassword.getText().toString())) {
                                 Toast.makeText(SignIn.this, "Sign in successful", Toast.LENGTH_SHORT).show();
+                                Intent homeIntent = new Intent(SignIn.this, Home.class);
+                                Common.currentUser = user;
+                                startActivity(homeIntent);
+                                finish();
                             } else {
                                 Toast.makeText(SignIn.this, "Wrong Password", Toast.LENGTH_SHORT).show();
                             }
