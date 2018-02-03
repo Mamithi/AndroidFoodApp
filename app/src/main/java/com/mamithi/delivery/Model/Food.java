@@ -5,17 +5,26 @@ package com.mamithi.delivery.Model;
  */
 
 public class Food {
-    private String Name, Description, Image, Price, MenuId;
+    private String Name, Description, Image, Price, MenuId, Discount;
 
     public Food() {
     }
 
-    public Food(String name, String description, String image, String price, String menuId) {
+    public Food(String name, String description, String image, String price, String menuId, String discount) {
         Name = name;
         Description = description;
         Image = image;
         Price = price;
         MenuId = menuId;
+        Discount = discount;
+    }
+
+    public String getDiscount() {
+        return Discount;
+    }
+
+    public void setDiscount(String discount) {
+        Discount = discount;
     }
 
     public String getName() {
