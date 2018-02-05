@@ -2,6 +2,7 @@ package com.mamithi.delivery;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
@@ -23,6 +24,7 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.mamithi.delivery.Common.Common;
+import com.mamithi.delivery.Database.Database;
 import com.mamithi.delivery.Interface.ItemClickListener;
 import com.mamithi.delivery.Model.Category;
 import com.mamithi.delivery.ViewHolder.MenuViewHolder;
@@ -61,8 +63,8 @@ public class Home extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+               Intent cartIntent = new Intent(Home.this, Cart.class);
+               startActivity(cartIntent);
             }
         });
 
